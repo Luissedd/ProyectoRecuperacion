@@ -28,10 +28,12 @@ i.hamburguer::before {
 
 i.fullStar::before {
   content: "\e9d9";
+  color: #F85959;
 }
 
 i.emptyStar::before {
   content: "\e9d7";
+  color: #F85959;
 }
 
 i.map::before {
@@ -65,20 +67,293 @@ i.envelop::before {
 /* Destinos individuales */
 
 #parisPicture {
-  background-image: url(images/destination-1.jpg);
+  background-image: url(./images/destination-1.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 #californiaPicture {
-  background-image: url(images/destination-2.jpg);
+  background-image: url(./images/destination-2.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 #londonPicture {
-  background-image: url(images/destination-3.jpg);
+  background-image: url(./images/destination-3.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 #singapurPicture {
-  background-image: url(images/destination-4.jpg);
+  background-image: url(./images/destination-4.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 #sidneyPicture {
-  background-image: url(images/destination-5.jpg);
+  background-image: url(./images/destination-5.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 #kiotoPicture {
-  background-image: url(images/destination-6.jpg);
+  background-image: url(./images/destination-6.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+/*Header*/
+header{
+  
+  padding-top: 2rem;
+  background-image: url(./images/bg_3.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  font-family: Poppins;
+}
+#navContainer {
+  width: 70%;
+  height: 40px;
+  text-align: center;
+  align-items: center;
+  margin-left: 15%;
+}
+.logo{
+  float: left;
+  color: white;
+  padding: -1rem;
+  line-height: 1rem;
+  font-weight: bold;
+}
+
+header nav button{
+  display: none;
+}
+nav ul{
+  display: inline-block;
+}
+nav ul{
+  float: right;
+  line-height: 1rem;
+  
+}
+nav ul li{
+  float: left;
+}
+nav ul li a{
+  text-decoration: none;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  color: white;
+}
+#listado{
+  border: 0.1rem solid white;
+  border-radius: 6rem;
+}
+#listado:hover{
+  background-color: #F85959;
+  border: 0.1rem solid #F85959;
+}
+#subHeader{
+  font-weight: bolder;
+  font-weight: 900;
+  color: white;
+  line-height: 65vh;
+}
+
+content{
+  width: 100%;
+}
+/*Lateral*/
+#leftColumn{
+  display: inline;
+  width: 40%;
+  float: left;
+  align-items: center;
+  margin-top: 3rem;
+}
+.leftBlock{
+  border: solid 1px #e6e6e6;
+  width: 30%;
+  margin-left: 30%;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: #F8FAFF;
+}
+.leftBlock form input{
+  width: 100%;
+  margin-top: 1rem;
+  height: 2rem;
+  padding: 0.1rem;
+  border: 1px solid #e6e6e6;
+}
+select{
+  color: black;
+  width: 100%;
+  margin-top: 1rem;
+  height: 2.6rem;
+  padding: 0.1rem;
+  padding-right: 0.3rem;
+  margin-right: -1rem;
+  margin-left: -1rem;
+  border: solid 1px #e6e6e6;
+  background-color: #e6e6e6;
+}
+.redButton{
+  background-color: #F85959;
+}
+.redButton:hover{
+  background-color: #e6e6e6;
+}
+form .starsContainer input{
+  width: 1rem;
+  margin-right: 1rem;
+  margin-top: none;
+}
+.starsContainer{
+  display: flex;
+  flex-direction: row;
+}
+.starsContainer label{
+  margin-top: 1.2rem;
+}
+
+/*Destionos*/
+div#destinationsArea{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+span.price{
+  position: relative;
+  left: 12rem;
+  bottom: 4.7rem;
+  color: blue;
+}
+h3 a{
+  color: black;
+}
+.destinationInfo{
+}
+a.greenButton{
+  background-color: greenyellow;
+  padding: 0.1rem;
+  border-radius: 0.2rem;
+  float: right;
+  border: 1px solid #e6e6e6;
+}
+.destination{
+  margin: 3rem;
+  border: 1px solid #e6e6e6;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: #F8FAFF;
+  width: 15rem;
+  text-align: left;
+  padding: 0.5rem;
+}
+.destinationPicture{
+  width: 15rem;
+  height: 15rem;
+
+}
+.destinationContent{
+  display: inline;
+
+}
+.destinationInfo span{
+  display: block;
+}
+
+div#navPages{
+  align-items: center;
+  display: block;
+  width: 100%;
+}
+div#navPages ul{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 3rem;
+  justify-content: center;
+}
+div#navPages ul li{
+  margin: 1rem;
+  padding: 1rem;
+  border: 1px solid #F85959;
+  color: #F85959;
+  border-radius: 3rem;
+  justify-content: center;
+  align-items: center;
+  line-height: 0.2rem;
+}
+div#navPages ul li a{
+  color: #F85959;
+}
+
+/*Footer*/
+
+#footerContent{
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding: 5rem;
+  color: white;
+  background-color: #222831;
+}
+#footerContent a{
+  color: white;
+}
+#footer-uno{
+  width: 20%;
+  text-align: left;
+}
+#footer-uno ul{
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+#footer-uno ul li{
+  margin: 1rem;
+  border-radius: 4rem;
+  padding: 1rem;
+  line-height: 0.8rem;
+  background-color: grey;
+}
+#footer-dos{
+  margin: 1rem;
+  width: 20%;
+  text-align: left;
+}
+#footer-tres{
+  margin: 1rem;
+  width: 20%;
+  text-align: left;
+}
+#footer-cuatro{
+  margin: 1rem;
+  width: 20%;
+  text-align: left;
+}
+
+@media (maxwidth:1200px){
+  div.destination{
+    width: 40rem;
+    margin: 0.5rem;
+  }
+}
+@media (maxwidth:990px){
+  header nav a.logo{
+    display: none;
+  }
+  i.hamburguer{
+    display: inline;
+  }
 }
